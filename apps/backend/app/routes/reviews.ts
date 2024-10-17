@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 
 const reviewsRouter = express.Router();
 
@@ -8,4 +8,4 @@ reviewsRouter.get("/reviews", (req, res) => {});
 // Post a review on an User..
 reviewsRouter.post("/review/:id", (req, res) => {});
 
-module.exports = reviewsRouter;
+export default reviewsRouter;

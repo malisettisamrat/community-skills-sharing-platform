@@ -1,11 +1,11 @@
-const express = require("express");
+import express from "express";
 
 // import all the routers..
-const usersRouter = require("./routes/users");
-const skillsRouter = require("./routes/skills");
-const bookingsRouter = require("./routes/bookings");
-const notificationsRouter = require("./routes/notifications");
-const reviewsRouter = require("./routes/reviews");
+import usersRouter from "./routes/users";
+import skillsRouter from "./routes/skills";
+import bookingsRouter from "./routes/bookings";
+import notificationsRouter from "./routes/notifications";
+import reviewsRouter from "./routes/reviews";
 
 // Define the express
 const app = express();
@@ -18,4 +18,4 @@ app.use("/api/v1/notification", notificationsRouter);
 app.use("/api/v1/review", reviewsRouter);
 
 // export the app
-module.exports = app;
+export default app;

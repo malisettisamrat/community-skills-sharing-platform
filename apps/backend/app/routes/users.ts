@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 
 // creating an express router for Users..
 const usersRouter = express.Router();
@@ -15,4 +15,4 @@ usersRouter.get("/profile", (req, res) => {});
 // Upadate a user profile..
 usersRouter.put("/profile", (req, res) => {});
 
-module.exports = usersRouter;
+export default usersRouter;

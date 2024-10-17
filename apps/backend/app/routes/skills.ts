@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 
 const skillsRouter = express.Router();
 
@@ -14,4 +14,4 @@ skillsRouter.put("/skill/:id", (req, res) => {});
 // Delete a skill/service..
 skillsRouter.delete("/skill/:id", (req, res) => {});
 
-module.exports = skillsRouter;
+export default skillsRouter;
